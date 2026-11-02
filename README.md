@@ -1,3 +1,3 @@
 # palautusrepositorio
 
-[ohtuvarasto] (https://github.com/JacqDeGatineau/ohtuvarasto)
+[ohtuvarasto](https://github.com/JacqDeGatineau/ohtuvarasto)
