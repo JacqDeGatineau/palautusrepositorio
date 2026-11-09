@@ -1,9 +1,9 @@
 from player_reader import PlayerReader
 
-class PlayerStats: 
-    def __init__(self, reader):
-        self._players = reader.get_players()
 
+class PlayerStats:
+    def __init__(self, reader: PlayerReader):
+        self._players = reader.get_players()
 
     def top_scorers_by_nationality(self, nationality):
         # metodin käyttämä apufufunktio voidaan määritellä näin
@@ -14,7 +14,7 @@ class PlayerStats:
             return player.nationality == nationality
 
         players = filter(has_nation,  self._players)
-        
+
         sorted_players = sorted(
             list(players),
             reverse=True,
