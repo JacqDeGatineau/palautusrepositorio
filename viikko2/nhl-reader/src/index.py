@@ -4,8 +4,8 @@ from rich.table import Table
 from player_reader import PlayerReader
 from player_stats import PlayerStats
 
-def show_table(players, season, nationality):
-    table = Table(title=f"Players from {nationality}, season {season}")
+def show_table(players, season, team):
+    table = Table(title=f"Players from {team}, season {season}")
     table.add_column("Name", style="cyan")
     table.add_column("Team", style="magenta")
     table.add_column("Goals", justify="right", style="green")
@@ -25,13 +25,13 @@ def show_table(players, season, nationality):
 
 def main():
     season = input("Season [2024-25]: ") or "2024-25"
-    nationality = (input("Nationality [FIN]: ") or "FIN").upper()
+    team = (input("Team [FLA]: ") or "FLA").upper()
 
     url = f"https://studies.cs.helsinki.fi/nhlstats/{season}/players"
     stats = PlayerStats(PlayerReader(url))
-    players = stats.top_scorers_by_nationality(nationality)
+    players = stats.top_scorers_by_team(team)
 
-    show_table(players, season, nationality)
+    show_table(players, season, team)
 
 if __name__ == "__main__":
     main()
