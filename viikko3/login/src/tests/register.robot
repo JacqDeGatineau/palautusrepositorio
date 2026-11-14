@@ -45,14 +45,6 @@ Register Fail With Message
     Register Page Should Be Open
     Get Text  body  *=  ${message}
 
-Set Username
-    [Arguments]  ${username}
-    Fill Text  id=username  ${username}
-
-Set Password
-    [Arguments]  ${password}
-    Fill Secret  id=password  $password
-
 Set Password Confirmation
     [Arguments]  ${password}
     Fill Secret  id=password_confirmation  $password
