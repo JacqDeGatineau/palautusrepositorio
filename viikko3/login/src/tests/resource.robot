@@ -8,6 +8,7 @@ ${DELAY}         500ms
 ${HOME_URL}      http://${SERVER}
 ${LOGIN_URL}     http://${SERVER}/login
 ${REGISTER_URL}  http://${SERVER}/register
+${WELCOME_URL}   http://${SERVER}/welcome
 ${BROWSER}       chromium
 ${HEADLESS}      false
 
@@ -30,9 +31,17 @@ Main Page Should Be Open
 Register Page Should Be Open
     Get Url  ==  ${REGISTER_URL}
 
+Welcome Page Should Be Open
+    Get Url  ==  ${WELCOME_URL}
+
 Go To Login Page
     Go To  ${LOGIN_URL}
 
 Go To Starting Page
     Go To  ${HOME_URL}
 
+Go To Register Page
+    Go To  ${REGISTER_URL}
+
+Go To Welcome Page
+    Go To  ${WELCOME_URL}
