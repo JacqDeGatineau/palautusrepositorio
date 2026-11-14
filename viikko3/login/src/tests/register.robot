@@ -13,6 +13,27 @@ Register With Valid Username And Password
     Click  button >> text=Register
     Register Should Succeed
 
+Register With Password Containing Special Character
+    Set Username  peter
+    Set Password  kalle#abc
+    Set Password Confirmation  kalle#abc
+    Click  button >> text=Register
+    Register Should Succeed
+
+Register With Password Containing Only Lowercase Letters
+    Set Username  matti
+    Set Password  kallekalle
+    Set Password Confirmation  kallekalle
+    Click  button >> text=Register
+    Register Fail With Message  Password must contain at least one number or special character
+
+Register With Password Containing Only Uppercase And Lowercase Letters
+    Set Username  ville
+    Set Password  KalleKalle
+    Set Password Confirmation  KalleKalle
+    Click  button >> text=Register
+    Register Fail With Message  Password must contain at least one number or special character
+
 Register With Too Short Username And Valid Password
     Set Username  ab
     Set Password  kalle123
