@@ -1,0 +1,5 @@
+## Hyvä daily
+
+Hyvä daily on lyhyt, organisoitu ja se keskittyy vain yhteen asiaan, edistymiseen kohti sprintin tavoitetta. Mitä se ei ole: työmaakokous, projektijohdon määräilyistunto tai tunnin mittainen harhaileva palaveri siitä mitä kaikkea nyt onkaan järjestelmissä ja prosesseissa vialla, eikä kiva jutteluhetki, jossa puhutaan kuulumisista. Sen idea on luoda jokaiselle tiimin jäsenelle selkeä kuva siitä, missä ollaan sprintissä menossa ja mikä on oma tehtävä päivän aikana. Tämän lisäksi se helpottaa kommunikaatiota, sillä jos joku asia blokkaa kehityksen, siihen voidaan reagoida mahdollisimman ajoissa.
+
+Varmaan daily kannattaa pääpiirteissään pitää melko ritualistisena, jossa käydään läpi mitä yritetään päivän aikana saada aikaan ja tuodaan esiin, jos joku blokkaa edistymisen. Mielestäni on myös tärkeää ottaa periaatteeksi, että epäonnistumista ei ole vaan tiimissä opitaan yhdessä. Eli sanotaan vain lyhyesti: Mitä sain aikaan edellisen tapaamisen jälkeen, mitä aion saada aikaan ennen seuraavaa ja mitä esteitä etenemisellä on.
