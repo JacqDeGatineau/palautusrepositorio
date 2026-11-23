@@ -51,7 +51,7 @@ class UserService:
                 "Password must contain at least one number or special character"
             )
 
-        """if password != password_confirmation:
-            raise UserInputError("Passwords do not match")"""
+        if password != password_confirmation:
+            raise UserInputError("Passwords do not match")
 
 user_service = UserService()
